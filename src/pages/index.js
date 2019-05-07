@@ -5,26 +5,30 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
+import thumb01 from '../assets/images/tor-beyond-ad.gif'
+import thumb02 from '../assets/images/tor-kindness.png'
+import thumb03 from '../assets/images/tor-earth.png'
+import thumb04 from '../assets/images/tor-podcast.png'
+import thumb05 from '../assets/images/tor-tradition.png'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
+import full01 from '../assets/images/tor-beyond-ad.gif'
+import full02 from '../assets/images/tor-kindness.png'
+import full03 from '../assets/images/tor-earth.png'
+import full04 from '../assets/images/tor-podcast.png'
+import full05 from '../assets/images/tor-tradition.png'
 import full06 from '../assets/images/fulls/06.jpg'
 
+// import podcastOgg from '../assets/misc/FinalVeganismPodcast.ogg'
+import podcastMp3 from '../assets/misc/FinalVeganismPodcast.mp3'
+
+
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Beyond Meat Advertisement', description: "This advertisement was created for a campaign for Beyond Meat to show millennials, sustainably conscious people, or just about anyone that they don’t have to compromise their convenience, taste, or wallet when choosing how to eat. The goal of this campaign was to inform consumers that alternative meat can be delicious and accessible. I wanted to present Beyond meat as looking to make people rethink the way they get their protein and to help them make more sustainable choices when it comes to consuming food. Creating a advertisement for a burger with benefits for health and importantly, the environment to drive consumers to not only change their eating habits but to want to take action. I created this simplistic ad to guide consumers to want to make better choices that positively impact the environment."},
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'Kindness Collection Creative Campaign', description: "The Kindness Collection Creative Campaign that I put together was aimed to raise brand awareness for an up and coming personal project I've been working on called the Kindness Collection Podcast within six months by engaging with consumers through social media by launching a #StartWithLove campaign, specifically on Instagram, Facebook, Twitter, and Snapchat to encourage followers to better support one another and to spread love. Ultimately wanting to get the podcast’s name well-known by using social media platforms to promote it as well as creating press releases and media alerts for potential events to promote the campaign."},
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'CSUDH Sustainability Department Social Media Creative Content', description: "These are a collection of posts that I created for the Sustainbility Department at my college. The goal was to create creative content to increase social media impressions and engagement by increasing likes on Instagram by at least 200 likes per post."},
+    { id: '4', src: full04, thumbnail: thumb04, caption: '[Podcast] - Veg With Victoria Podcast Episode 1', description: <div><audio controls><source src={podcastMp3} type="audio/mpeg"/></audio><p>Click the play button to start podcast</p></div>},
+    { id: '5', src: full05, thumbnail: thumb05, caption: 'Animal Rights Strategic Plan', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
     { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
 ];
 
@@ -75,7 +79,7 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
+        const siteTitle = "Tori Portfolio"
         const siteDescription = "Site description"
 
         return (
@@ -89,13 +93,13 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                            <h2>Hi, my name is Victoria Tombor!</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
+                        <p>I am a recent graduate from Cal State University of Dominguez Hills where I achieved my Bachelors in Communication with an emphasis in Advertising & Public Relations. When not working, I enjoy staying active within the animal welfare community to bring awareness to issues that I feel passionate about. I just recently finished volunteering and interning with Best Friends Animal Society where I worked under the Learning & Development Lead.</p>
+                        <p>I have a knack for the outdoors and love to camp. I usually find my way to a new adventure by hiking or cycling. Something I’ve discovered early on in life is that I am passionate about people. At the end of the day, as long as I’m connecting with or meeting people, I am a happy camper! Connecting with others is a real treat, if you are interested in collaborating or networking, I’d love to chat!</p>
+                        {/* <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
+                        </ul> */}
                     </section>
 
                     <section id="two">
@@ -107,10 +111,10 @@ class HomeIndex extends React.Component {
                             caption,
                             description
                         }))} />
-
+{/* 
                         <ul className="actions">
                             <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul>
+                        </ul> */}
                     </section>
 
                     <section id="three">
@@ -118,11 +122,17 @@ class HomeIndex extends React.Component {
                         <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="#">
+                                <form method="post" data-netlify-recaptcha="true" data-netlify="true" name="contact" netlify>
                                     <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                        <div className="6u 12u$(xsmall)">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div className="6u 12u$(xsmall)">
+                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                        </div>
+                                        <div className="12u">
+                                            <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                                        </div>
                                     </div>
                                 </form>
                                 <ul className="actions">
@@ -131,19 +141,19 @@ class HomeIndex extends React.Component {
                             </div>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
-                                    <li>
+                                    {/* <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
                                         1234 Somewhere Rd.<br />
                                         Nashville, TN 00000<br />
                                         United States
-                                    </li>
+                                    </li>*/}
                                     <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
-                                    </li>
+                                        <h3 className="icon fa-address-card"><span className="label">Resume</span></h3>
+                                        <a href="mailto:victoria.tombor@gmail.com">Resume</a>
+                                    </li> 
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="mailto:victoria.tombor@gmail.com">Email Me</a>
                                     </li>
                                 </ul>
                             </div>
