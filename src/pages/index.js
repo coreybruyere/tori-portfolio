@@ -22,6 +22,7 @@ import full06 from '../assets/images/tor-crossroads.png'
 // import podcastOgg from '../assets/misc/FinalVeganismPodcast.ogg'
 import podcastMp3 from '../assets/misc/FinalVeganismPodcast.mp3'
 import resume from '../assets/misc/resume.pdf';
+import review from '../assets/misc/Crossroads-Review.pdf';
 
 
 const DEFAULT_IMAGES = [
@@ -30,7 +31,7 @@ const DEFAULT_IMAGES = [
     { id: '3', src: full03, thumbnail: thumb03, caption: 'CSUDH Sustainability Department Social Media Creative Content', description: "These are a collection of posts that I created for the Sustainbility Department at my college. The goal was to create creative content to increase social media impressions and engagement by increasing likes on Instagram by at least 200 likes per post."},
     { id: '4', src: full04, thumbnail: thumb04, caption: '[Podcast] - Veg With Victoria Podcast Episode 1', description: <div><audio controls><source src={podcastMp3} type="audio/mpeg"/></audio><p>Click the play button to start podcast</p></div>},
     { id: '5', src: full05, thumbnail: thumb05, caption: 'Animal Rights Strategic Plan', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '6', src: thumb06, thumbnail: thumb06, caption: '[Review] - Crossroads: Where Vegan goes fine-dining', description: "Lets admit it: Good vegan restaurants are dime a dozen. Finally vegan goes fine-dining at this LA restaurant. Crossroads provides the fine-dining experience that may be hard to find in other local vegan spots, by showcasing vegan fare that is elegantly executed. Their play on dishes like Oysters and creamy pastas are lovely and delicious. The Artichoke Oysters are a go-to made together perfectly with artichoke puree, crispy oyster mushroom, and kelp caviar. Another treat that you can’t miss, their limited edition and intricate seafood tower, which is the first portrait my mind paints when thinking of foods served in such fine-dining restaurants. Not to mention this seafood tower is paired with four oyster tequila shots hidden at the bottom of the tower- now that’s impressive! If Crossroads goal was to create plant-based replicas, I’d say they nailed it. They have proved to both omnivorous and carnivorous eaters that getting a similar mouthwatering foodie experience is possible with plants. The space itself is beautiful and warm, making you feel cozy and intimate. Crossroads is has succeeded at redefining the concept of vegan dining, to take it away from the hippie, health-food crowd and deliver an upscale hotspot that fits right into its Los Angeles neighborhood. If you’re going to splurge this is the place to do it!"}
 ];
 
 class HomeIndex extends React.Component {
