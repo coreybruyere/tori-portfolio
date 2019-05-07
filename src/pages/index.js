@@ -21,6 +21,7 @@ import full06 from '../assets/images/fulls/06.jpg'
 
 // import podcastOgg from '../assets/misc/FinalVeganismPodcast.ogg'
 import podcastMp3 from '../assets/misc/FinalVeganismPodcast.mp3'
+import resume from '../assets/misc/resume.pdf';
 
 
 const DEFAULT_IMAGES = [
@@ -119,7 +120,7 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p>Get in contact with me via email or checkout out my resume below!</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" data-netlify-recaptcha="true" data-netlify="true" name="contact" netlify>
@@ -149,7 +150,7 @@ class HomeIndex extends React.Component {
                                     </li>*/}
                                     <li>
                                         <h3 className="icon fa-address-card"><span className="label">Resume</span></h3>
-                                        <a href="mailto:victoria.tombor@gmail.com">Resume</a>
+                                        <a href={resume} target="_blank" >Resume</a>
                                     </li> 
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
